@@ -1,0 +1,23 @@
+{
+  "generate heading": {
+    "prefix": "!closure",
+    "body": [
+      "function FunctionName() {",
+      "\tlet paramName = 0;",
+      "",
+      "\tfunction increment() {",
+      "\t\tparamName++;",
+      "\t\treturn paramName;",
+      "\t}",
+      "",
+      "\treturn increment;",
+      "}",
+      "",
+      "const object1 = FunctionName();",
+      "console.log(object1());",
+      "const object2 = FunctionName();",
+      "console.log(object2());"
+    ],
+    "description": "Generates a closure example"
+  }
+}
